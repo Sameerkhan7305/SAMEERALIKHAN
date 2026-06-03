@@ -1,274 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-JS</title>
+     <link rel="icon" href="./92-929336_open-office-room-logo-png.png">
 </head>
-
 <body>
-
- 
-
-
-
-
-  <nav>
-
-    <h1>NYB App</h1>
-
-    <button id="darkBtn">
-      Dark Mode
-    </button>
-
-  </nav>
-
-
-
-
-
-  
-
-  <div class="container">
-
-    <h1>Weather App</h1>
-
-    <input type="text"
-    id="city"
-    placeholder="Enter City">
-
-    <button id="weatherBtn">
-      Get Weather
-    </button>
-
-    <h2 id="result"></h2>
-
-  </div>
-
-
-
-
-
-
-
+    <header>
+    <h1>My Website</h1>
+</header>
 
 <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<br>
+<span>HTML</span>
+<span>CSS</span>
+    
+
+<ol type="I" start="2"> 
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+<br>
+<br>
 
-    <h1>NYB Infotech</h1>
+<ol>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>Database</li>
+</ol>
 
-    <ul>
+<br>
 
-      <li>Home</li>
+<ol type="i">
+    <li>Cricket</li>
+    <li>Football</li>
+    <li>Hockey</li>
+</ol>
 
-      <li>Services</li>
+<br>
 
-      <li>Gallery</li>
+<ul>
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Orange</li>
+</ul>
 
-      <li>Contact</li>
+<br>
 
-    </ul>
+<ol type="I">
+    <li>India</li>
+    <li>Japan</li>
+    <li>Canada</li>
+</ol>
 
-    <button id="darkBtn">
-      Dark
-    </button>
+<br>
 
-  </nav>
+<ol type="I" start="2" reverse>
+    <li>Java</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+</ol>
 
 
- 
-  
+<hr>
+<fieldset>
+<form action="">
+    <label style="display:inline-block; width:100px;">UserName:</label>
+    <input type="email" placeholder="@gmail.com">
 
+    <br><br>
 
+    <label style="display:inline-block; width:100px;">Password:</label>
+    <input type="password" placeholder="********">
 
-  <section class="hero">
+    <br><br>
 
-    <h1>Welcome To NYB Infotech</h1>
+    <label style="display:inline-block; width:100px;">Mobile:</label>
+    <input type="number" placeholder="8478374638">
+    
+    <br><br>
+<label style="display: inline-block; width: 100px;">Address:</label>
+<input type="text" placeholder="17-8998-A2">
 
-    <p>
-      Learn HTML CSS JavaScript React
-    </p>
+</form>
 
-    <button>
-      Explore
-    </button>
+<!-- Drop down -->
+<br>
+<label for="">Select Course:</label>
+<select name="" id="Topic">
+<option value="name">Select Course</option>
+<option value="number">HTML</option>
+<option value="">CSS</option>
+<option value="">JavaScript</option>
+</select>
 
-  </section>
+<br>
+<button>Submit</button>
 
+</fieldset>
+<br>
 
- 
-  
 
 
+<legend>wikipedia
+<br>
+<iframe
+    src="https://www.wikipedia.org"
+    width="500"
+    height="300">
+</iframe>
+</legend>
 
-  <section class="services">
+<br><br>
 
-    <h1>Our Services</h1>
+<section>
+    <h2>About Me</h2>
+    <p>I am learning HTML.</p>
+</section>
 
-    <div class="grid">
 
-      <div class="card">
 
-        <h2>Web Design</h2>
+<br>
 
-        <p>Modern Website Design</p>
 
-      </div>
+<!-- <article>
+    <h2>HTML </h2>
+    <p>Learn HTML Basics.</p>
+</article> -->
 
-      <div class="card">
+<div>Block 1</div>
+<div>Block 2</div>
 
-        <h2>Frontend</h2>
 
-        <p>HTML CSS JavaScript</p>
+<br>
 
-      </div>
 
-      <div class="card">
+&copy;
+<br>
 
-        <h2>React</h2>
+&reg;
+<br>
 
-        <p>Modern React Apps</p>
+&euro;
+<br>
 
-      </div>
+&pound;
 
-    </div>
 
-  </section>
+<h1>JavaScript Introduction</h1>
 
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="country"></p>
 
- 
-  
+    <script>
 
+        
+        var studentName = "Sameer";
 
+        
+        let age = 25;
 
+        
+        const country = "India";
 
-  <section class="gallery">
+      
+        document.getElementById("name").innerHTML =
+        "Name: " + studentName;
 
-    <h1>Gallery</h1>
+        document.getElementById("age").innerHTML =
+        "Age: " + age;
 
-    <div class="images">
+        document.getElementById("country").innerHTML =
+        "Country: " + country;
 
-      <img src="https://picsum.photos/200?1">
+        
+        console.log(studentName);
+        console.log(age);
+        console.log(country);
 
-      <img src="https://picsum.photos/200?2">
+        // Alert Box
+        alert("Welcome " + studentName);
 
-      <img src="https://picsum.photos/200?3">
+    </script>
 
-    </div>
 
-  </section>
 
 
-
-  
-
-
-  <section>
-
-    <table>
-
-      <tr>
-
-        <th>Name</th>
-
-        <th>Course</th>
-
-      </tr>
-
-      <tr>
-
-        <td>Sameer</td>
-
-        <td>Frontend</td>
-
-      </tr>
-
-    </table>
-
-  </section>
-
-
-  
-
-  <section class="todo">
-
-    <h1>To-Do App</h1>
-
-    <input type="text"
-    id="task">
-
-    <button id="addBtn">
-      Add Task
-    </button>
-
-    <ul id="list"></ul>
-
-  </section>
-
-
-  
-  
-
-
-
-  <section class="contact">
-
-    <h1>Contact Us</h1>
-
-    <label>Name</label>
-
-    <input type="text"
-    id="name">
-
-    <label>Email</label>
-
-    <input type="email"
-    id="email">
-
-    <button id="submitBtn">
-      Submit
-    </button>
-
-    <h2 id="message"></h2>
-
-  </section>
-
-
-  
-  
-
-  
-
-  <footer>
-
-    <h2>NYB Infotech © 2026</h2>
-
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="script.js"></script>
-
+<footer>
+    <p>Copyright 2026</p>
+</footer>
 </body>
 </html>
