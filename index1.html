@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Complete Practice</title>
+</head>
+<body>
+
+<h2>JavaScript Practice</h2>
+<h4>Open Console</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// primitive data types
+
+
+// String
+let name = "Sameer";
+console.log(name);
+
+// Number
+let age = 25;
+console.log(age);
+
+// Boolean
+let isStudent = true;
+console.log(isStudent);
+
+// Undefined
+let city;
+console.log(city);
+
+// Null
+let salary = null;
+console.log(salary);
+
+// BigInt
+let population = 123456789123456789123n;
+console.log(population);
+
+// Symbol
+let id = Symbol("userId");
+console.log(id);
+
+
+// -------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+// String
+let studentName = "Sameer";
+
+// Number
+let marks = 85;
+
+// Boolean
+let isPassed = true;
+
+// Null
+let project = null;
+
+// Undefined
+let mobileNumber;
+
+let PhoneNumber = 9856873849
+
+// Output
+console.log("Student Name: " + studentName);
+
+console.log("Marks: " + marks);
+
+console.log("Pass Status: " + isPassed);
+
+console.log("Project: " + project);
+
+console.log("Mobile Number: " + mobileNumber);
+
+console.log("PhoneNumber: " + PhoneNumber);
+
+
+
+
+// Using Number datatype
+let totalMarks = marks + 10;
+console.log("Updated Marks: " + totalMarks);
+
+// Using Boolean datatype
+if(isPassed)
+    console.log("Congratulations! You Passed.");
+
+// ----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// typeof and Console ouput
+
+
+
+let name1 = "Sameer";
+let agee = 25;
+let isStudents = true;
+let salarys = null;
+let cityy;
+let bigNumber = 123456789123456789n;
+
+console.log(name1);
+console.log(agee);
+console.log(isStudents);
+console.log(salarys);
+console.log(cityy);
+console.log(bigNumber);
+
+console.log(typeof name1);
+console.log(typeof agee);
+console.log(typeof isStudents);
+console.log(typeof salarys);
+console.log(typeof cityy);
+console.log(typeof bigNumber);
+console.log(typeof null);
+console.log(typeof Boolean);
+console.log(typeof BigInt);
+console.log(typeof object);
+
+
+let course = "JavaScript";
+let duration = 3;
+let completed = false;
+
+console.log(typeof course);
+console.log(typeof duration);
+console.log(typeof completed);
+
+// ------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+// reference data types
+
+// Array
+let skills = ["HTML", "CSS", "JavaScript"];
+
+console.log(skills);
+console.log(skills[0]);
+console.log(skills[1]);
+console.log(skills[2]);
+
+
+let Fruits = ["Mango", "Apple", "Banana", "Lemon"]
+
+
+console.log(Fruits)
+console.log(Fruits[0]);
+console.log([2]);
+console.log(Fruits[0], Fruits[3]);
+// ---------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Object
+let student = { name: "Sameer",age: 25,city: "Bangalore"};
+
+console.log(student);
+console.log(student.name);
+console.log(student.age);
+console.log(student.city);
+
+// 2
+
+let Fruit = { Names: "Apple" , price: 233, Type:"Fruit"  };
+
+console.log(Fruit);
+console.log(Fruit.price);
+console.log(Fruit.Type);
+console.log(Fruit. Names);
+console.log(Fruit.Names, Fruit.price, Fruit.Type);
+
+// -----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function
+cityName();
+
+function greet() {
+    console.log("Welcome Sameer");
+}
+
+greet();
+
+
+function cityName(){
+    console.log("Hyderbad")
+}
+
+// 3
+
+let student2 = {  name: "Sameer", skills: ["HTML", "CSS", "JavaScript"]
+};
+
+function displayStudent2() {
+    console.log(student2.name);
+    console.log(student2.skills);
+}
+
+displayStudent2();
+
+let Company = {Name3: "NYB", Details: [ "HighTEchcity" ,"HYD", "Telengana", ]};
+
+function Companydetails(){
+    console.log(Company.Name3);
+    console.log(Company.Details);
+}
+
+Companydetails()
+
+// ----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Typeof ARRAY , object and function
+
+let skilss = ["HTML","CSS","JS"];
+
+console.log(typeof skilss);
+
+
+
+let student22 = {
+    name:"Sameer"
+};
+
+console.log(typeof student22);
+
+
+
+
+function greet(){
+    console.log("Hello");
+}
+
+console.log(typeof greet);
+
+// ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+// Global
+// The variable is declared outside the function
+let nam1 = "Sameer";
+
+function display() {
+    console.log(nam1);
+}
+
+display();
+
+console.log(name);
+
+// -----------------
+
+// Local Scope
+// The Variable is declared inside the function
+
+function display() {
+
+    let age5 = 25;
+
+    console.log(age);
+}
+
+display();
+
+// console.log(age5)
+
+// --------------------
+
+
+
+
+
+
+
+
+
+
+
+// Block Scope let
+// let follows block scops and Var will not follow block scope
+
+if(true){
+
+    let city6 = "Bangalore";
+
+    console.log(city6);
+}
+
+// console.log(city);
+
+
+if(true){
+
+    var country = "India";
+}
+
+console.log(country);
+// Var will not follow block scope 
+//------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+let marks5 = 85;
+
+function result(){
+
+    let grade3 = "A";
+
+    console.log(marks5);
+    console.log(grade3);
+}
+
+result();
+
+// marks5 -> Global Variable
+
+// grade3 -> Local Variable
+
+//-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+// Storage
+
+
+
+// Primitive Number, String, Boolean, etc
+function Primitive(){
+let a = 10;
+let b = a;
+
+console.log(a); // 10
+console.log(b); // 10
+
+}
+
+Primitive()
+// 2
+
+let a = 10;
+
+let b = a;
+
+b = 50;
+
+console.log(a);
+console.log(b);
+
+// assign one variable to another
+//  variable, a copy is created , the original value is not shared.
+
+
+
+
+
+
+
+
+
+// non - Primitive or reference (Object, Array, Function)
+
+
+
+let obj1 = {
+  name: "Sameer"
+};
+
+let obj2 = obj1;
+
+obj2.name = "Khan";
+
+console.log(obj1.name);
+
+//  it will not create copy .... it will share the address
+
+
+
+let arr1 = ["Mango", "Apple"];
+
+let arr2 = arr1;
+
+arr2.push("Banana");
+
+console.log(arr1);
+console.log(arr2);
+
+
+function greet() {
+  console.log("Hello");
+}
+
+let x = greet;
+
+x();
+
+
+
+///-----------------------------------///
+
+
+// ES6
+
+
+// Let and const 
+//  Let is intoduced in es6 let can not be declared twice 
+// example let age = 5 ,,,, let age = 40
+
+//  where Var can be declered mutiple times
+
+// constat can be declared only one time and can not be change the value of const 
+
+
+// let 
+
+let name7 = "Sameer";
+
+name7 = "Khan";
+
+console.log(name7);
+
+// Value can be changed 
+
+
+
+
+
+
+
+
+
+
+//---------------------------
+
+
+const countryR = "India";
+
+console.log(countryR);
+
+//Value can not be changed 
+
+//symbol
+
+let ids = Symbol();
+
+console.log(ids);
+
+//---------------------------
+
+let studentName3 = "Sameer";
+
+let ages = 25;
+
+const countryd = "India";
+
+console.log(studentName3);
+console.log(ages);
+console.log(countryd);
+
+///---------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
