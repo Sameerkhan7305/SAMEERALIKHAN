@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Hello
+        Learning JavaScript
+    </h1>
+    <script  >
+
+// Function Declaration////
+// A Function Declaration is a normal function created using the function keyword and a function name.
+
+
+
+function greet(){
+    console.log("Welcome Sameer");
+}
+
+greet();
+//////////////
+
+
+// Function Expression
+
+// When a function is written inside a variable it is called a Function Expression.
+
+
+let welcome = function(){
+    console.log("Welcome Sameer");
+};
+
+welcome();
+/////////////
+
+
+
+// Named Function Expressio
+
+// A function expression that has its own name.
+
+
+let hello = function welcome(){
+
+    console.log("Hello Sameer");
+
+};
+
+hello();
+//////////////////////
+
+
+
+// Anonymous Function Expression
+
+
+// A function expression without any function name.
+
+
+let w = function(){
+
+    console.log("Hello Sameer Ali");
+
+};
+
+w();
+
+//////////////////////////////
+
+
+// Arrow Functions
+
+// Arrow Functions are a shorter ES6 syntax for writing functions.
+
+// normal
+function add(a,b){
+
+    return a+b;
+
+}
+// arrow
+const addd = (a,b) => {
+
+    return a+b;
+
+};
+
+
+
+
+// Recursive Functions
+
+// A function that calls itself is called a Recursive Function.
+
+
+
+function count(num){
+
+    if(num === 0){
+        return;
+    }
+
+    console.log(num);
+
+    count(num-1);
+
+}
+
+count(5);
+
+
+
+
+
+
+
+
+// ================================
+// Function Declaration
+// ================================
+
+function greet() {
+    console.log("Welcome Sameer");
+}
+
+greet();
+
+
+
+function makeTea(){
+
+    console.log("Boil Water");
+    console.log("Add Tea Powder");
+    console.log("Serve Tea");
+
+}
+
+makeTea();
+
+
+
+
+
+
+// ================================
+// Function Expression
+// ================================
+
+let show = function () {
+    console.log("Function Expression");
+};
+
+show();
+
+
+
+
+let chef = function(){
+
+    console.log("Making Biryani");
+
+};
+
+chef();
+
+
+
+// ================================
+// Named Function Expression
+// ================================
+
+let display = function welcome() {
+    console.log("Named Function Expression");
+};
+
+display();
+
+
+
+let worker = function electrician(){
+
+    console.log("Fixing Fan");
+
+};
+
+worker();
+
+
+// ================================
+// Anonymous Function Expression
+// ================================
+
+let demo = function () {
+    console.log("Anonymous Function");
+};
+
+demo();
+
+
+
+
+
+
+let deliveryBoy = function(){
+
+    console.log("Delivering Package");
+
+};
+
+deliveryBoy();
+
+
+
+
+// ================================
+// Arrow Function
+// ================================
+
+const add1 = (a, b) => {
+    return a + b;
+};
+
+console.log(add1(10, 20));
+
+
+// Short Arrow Function
+
+const multiply = (a, b) => a * b;
+
+console.log(multiply(5, 4));
+
+
+// ================================
+// Recursive Function
+// ================================
+
+function count(num) {
+
+    if (num === 0) {
+        return;
+    }
+
+    console.log(num);
+
+    count(num - 1);
+}
+
+count(5);
+
+
+
+
+
+function floor(level){
+
+    if(level === 0){
+        return;
+    }
+
+    console.log(level);
+
+    floor(level-1);
+
+}
+
+floor(5);
+// ================================
+// var
+// ================================
+
+var city = "Bangalore";
+
+var city = "Hyderabad";
+
+console.log(city);
+
+
+// ================================
+// let
+// ================================
+
+let age = 25;
+
+age = 30;
+
+console.log(age);
+
+
+// ================================
+// const
+// ================================
+
+const country = "India";
+
+console.log(country);
+
+
+// ================================
+// Hoisting with var
+// ================================
+
+console.log(student);
+
+var student = "Sameer";
+
+
+// ================================
+// Function Hoisting
+// ================================
+
+sayHello();
+
+function sayHello() {
+    console.log("Hello");
+}
+
+
+
+
+
+function factorial(n){
+
+    if(n === 1){
+        return 1;
+    }
+
+    return n * factorial(n-1);
+}
+
+console.log(factorial(5));
+
+
+
+function fibonacci(n){
+
+    if(n <= 1){
+        return n;
+    }
+
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+
+console.log(fibonacci(6));
+
+
+
+
+function hello11(name){
+    console.log("welcome"+ name);
+
+}
+hello11("sam");
+
+
+
+function add (a,b){
+    console.log(a+b);
+}
+add(10,20);
+    </script>
+</body>
+</html>
