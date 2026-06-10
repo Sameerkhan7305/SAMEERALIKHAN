@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+<h1>Hello ..... TODAYS TOPICS SCOPE AND RECURSIVE</h1>
+
+<script src="javascript.js">
+    
+
+
+
+// scope 
+// Scope determines where a variable can be accessed in a program
+
+
+
+// Global Scope///////////
+// A variable declared outside all functions and blocks is called a Global Variable.
+// It can be accessed from anywhere.////
+
+
+
+let name = "Sameer"; // Globle Variable  // outside of the function
+
+function show(){
+
+    console.log(name);// can be accessed in the function 
+
+}
+
+show();
+
+console.log(name); ///And can be accessed out side of the fucntion 
+
+
+
+///////////////////////////////////////////////////////
+
+
+let city = "Bangalore"; // Globle Variable  // outside of the function
+
+if(true){
+
+    console.log(city);
+
+}
+
+console.log(city)
+//////////////////////
+
+
+
+let country = "India";
+
+function one(){
+
+    console.log(country);
+
+}
+
+function two(){
+
+    console.log(country);
+
+}
+
+one();
+two();
+
+///////////////////////////////
+let Weapon = "M416"
+
+function bgmi (gun){
+    console.log(Weapon);
+}
+
+bgmi()
+
+console.log(Weapon);
+
+
+//Global Variable can be accessed AnyWheree
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+function sum(a){
+
+    if (a=== 1){
+        return 0;
+    }
+
+    return a + sum(a-1);
+}
+
+console.log(sum(10));
+
+
+function H (a){
+    console.log("hi"+ a);
+}
+
+H ("hello");
+
+
+
+
+// Function Scope
+
+// A variable declared inside a function can only be accessed inside that function.
+
+
+function show11(){
+
+    let age = 25;//variable inside the function and 
+
+    console.log(age) 
+
+
+}
+
+show11();
+
+
+
+function show(){
+
+    let age = 25; //variable inside the function and 
+
+}
+
+// console.log(age); can not be accessed out side of the fucntion 
+
+
+
+function student(){
+
+    let name = "Sameer";
+
+    console.log(name);
+
+}
+
+student();
+
+
+
+function salary(){
+
+    let amount = 50000;
+
+    console.log(amount);
+
+}
+
+salary();
+
+
+// Function Scope =  Accessible Only Inside Function
+
+
+
+
+
+
+// Block Scope
+// Variables declared using let or const inside {} are only accessible within that block
+
+
+if(true){
+
+    let city = "Hyderabad"; // let is variable and can be accessed only in side the {}
+
+    console.log(city);
+
+}
+
+
+// console.log(city); //////////// can not be accesed out side of {}
+
+
+for(let i=1;i<=3;i++){
+
+    console.log(i);
+
+}
+
+// console.log(i) can not be accesed out of {}
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////
+
+// A function that calls itself is called a Recursive Function.
+
+
+// 1. Base Condition: When to Stop. 
+// 2. Recursive Call: Calling itself again
+
+
+
+
+function count(num){
+
+    if(num === 0){
+        return;
+    }
+
+    console.log(num);
+
+    count(num - 1);
+
+}
+
+count(5);
+
+
+
+// function Reversecount(minus){
+//     if (minus ===10)
+//         return;
+//  console.log(minus)
+
+//  reversecount (minus + 1)
+// }
+
+// Reversecount(1)
+
+
+
+function Reversecount(minus){
+
+    console.log(minus);
+
+    if(minus === 10){
+        return;
+    }
+
+    Reversecount(minus + 1);
+
+}
+
+Reversecount(1);
+
+
+function rocket(time){
+
+    if(time === 0){
+
+        console.log("Launch ");
+
+        return;
+    }
+
+    console.log(time);
+
+    rocket(time-1);
+
+}
+
+rocket(5);
+
+
+
+function line(KKB){
+    if(KKB===40){
+        console.log("draw")
+        return;
+
+    }
+console.log(KKB)
+line(KKB+1)
+}
+
+line(30)
+
+
+
+function battery(percent){
+
+    if(percent === 0){
+
+        console.log("Phone Off");
+
+        return;
+    }
+
+    console.log(percent + "%");
+
+    battery(percent-20);
+
+}
+
+battery(100);
+
+
+
+
+function factorial(n){
+
+    if(n === 1){
+        return 1;
+    }
+
+    return n * factorial(n-1);
+
+}
+
+console.log(factorial(5));
+
+
+
+function factorial1(n) {
+    if (n===1){
+        return 1;
+    }
+    return n * factorial1(n-10)
+}
+console.log(factorial(50));
+</script>
+
+
+
+</body>
+</html>
