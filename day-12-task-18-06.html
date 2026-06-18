@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript </title>
+</head>
+<body>
+<h1>I am learnign  JavaScript</h1>
+
+
+
+
+
+
+
+<h1 id="title"> Hello Sameer</h1>
+
+
+<!-- <h1 id="title">Hello</h1> -->
+
+<p class="msg">One</p>
+
+<p class="msg">Two</p>
+
+
+
+
+
+
+
+
+<div id="parent">
+
+    <h1>Heading</h1>
+
+    <p>Paragraph</p>
+
+</div>
+
+
+
+
+
+
+<button id="clickButton"> Click Me</button>
+
+
+
+
+
+
+<button id="addButton">
+    Add Name
+</button>
+
+<div id="container">
+
+</div>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+
+
+<!-- DOM (Document Object Model) is a programming interface that represents
+ an HTML document as objects that JavaScript can access and manipulate. -->
+
+
+<h1 id="pageTitle">
+    Welcome
+</h1>
+
+
+
+<!-- Reading DOM Properties means accessing and retrieving information from HTML elements. -->
+
+
+
+
+<h1 id="pageTitle1">Welcome Samee</h1>
+
+<input id="userNameInput"value="Sameer"/>
+
+<button id="loginButton">   Login</button>
+
+
+
+<!-- innertexHTML -->
+
+<div id="contentBox">
+
+    <b>Hello</b>
+
+</div>
+
+
+
+
+<!-- value -->
+<input
+id="userNameInput"
+value="Sameer"
+/>
+
+
+
+
+
+<h1
+class="mainTitle"
+id="pageTitler">
+Hello
+</h1>
+
+
+
+<!-- Selecting DOM Elements means finding and accessing HTML elements using JavaScript. -->
+
+<!-- Simple Hindi: -->
+
+
+
+
+
+<h1 id="courseTitle">
+JavaScript Course
+</h1>
+
+
+
+
+
+<!-- querySelector() -->
+
+<!-- First matching element -->
+
+
+
+<p class="movieTitle">
+Avengers
+</p>
+
+
+<!-- querySelectorAll() -->Returns a collection like array
+
+
+
+
+<li class="studentItem">
+Sameer
+</li>
+
+<li class="studentItem">
+Rahul
+</li>
+
+<li class="studentItem">
+Ali
+</li>
+
+
+
+<!-- DOM Traversing -->
+
+
+<!-- DOM Traversing means moving from one HTML element to another related element in the DOM tree. -->
+
+
+<div id="companySection">
+
+    <h2>
+        Employees
+    </h2>
+
+    <p id="employeeOne">
+        Sameer
+    </p>
+
+    <p id="employeeTwo">
+        Rahul
+    </p>
+
+    <p id="employeeThree">
+        Ali
+    </p>
+
+</div>
+<script>
+
+<!-- 
+Creating DOM Elements Dynamically
+Creating DOM Elements Dynamically means creating new HTML elements using JavaScript 
+while the page is running. -->
+
+
+
+let pageTitle =
+document.getElementById(
+    "pageTitle"
+);
+
+pageTitle.textContent =
+"Welcome Sameer";
+
+
+
+
+let pageTitle3 =
+document.getElementById(
+    "pageTitle1"
+);
+
+console.log( pageTitle1.textContent);
+
+
+
+
+// INNERTEXThtml
+
+let contentBox =
+document.getElementById(
+    "contentBox"
+);
+
+console.log(
+contentBox.innerHTML
+);
+
+
+// value 
+
+let userNameInput =
+document.getElementById(
+    "userNameInput"
+);
+
+console.log(
+    userNameInput.value
+);
+
+
+
+
+// id 
+
+let loginButton =
+document.getElementById(
+    "loginButton"
+);
+
+console.log(
+loginButton.id
+);
+
+
+
+
+
+
+
+
+
+// classname
+
+let pageTitled =
+document.getElementById(
+    "pageTitler"
+);
+
+console.log(
+pageTitled.className
+);
+
+
+
+// selecting Element by using getElementById
+let courseHeading =
+document.getElementById(
+"courseTitle"
+);
+
+console.log(
+courseHeading
+);
+
+
+
+
+// textContent query selector
+let firstMovie =
+document.querySelector(
+".movieTitle"
+);
+
+console.log(
+firstMovie.textContent
+);
+
+
+
+
+// querySelectorAll()Returns a collection like array
+
+let studentList =
+document.querySelectorAll(
+".studentItem"
+);
+
+console.log(
+studentList
+);
+
+
+
+
+
+
+
+// Dom Traversing ---- Parent element means goes up and find the parent element
+let firstEmployee =
+document.getElementById(
+"employeeOne"
+);
+
+console.log(
+firstEmployee.parentElement
+);
+
+
+
+
+// children--- it will gives the entire childer under parent elemet 
+let companyBox1 =
+document.getElementById(
+"companySection"
+);
+
+console.log(
+companyBox1.children
+);
+
+
+
+// firstElementChild
+
+// gives the parents first child element 
+
+let companyBox =
+document.getElementById(
+"companySection"
+);
+
+console.log(
+companyBox.firstElementChild
+);
+
+
+
+// lastElementChild
+
+// it will gives the lat child elmetn of the parent element 
+
+let companyBoxe =
+document.getElementById(
+"companySection"
+);
+
+console.log(
+companyBoxe.lastElementChild
+);
+
+
+
+
+
+let checkoutButton =
+document.getElementById(
+"checkoutButton"
+);
+
+checkoutButton.addEventListener(
+"click",
+
+() => {
+
+console.log(
+"Checkout Started"
+);
+
+}
+);
+
+
+
+profileCard.addEventListener(
+"mouseover",
+
+function(){
+
+console.log(
+"Mouse Entered"
+);
+
+}
+);
+
+
+document.body.style.backgroundColor = "yellow";
+
+
+let heading =
+document.getElementById("title");
+
+console.log(heading.innerText);
+
+
+
+console.log(
+    heading.innerHTML
+);
+
+
+
+console.log(
+    heading.id
+);
+
+
+
+console.log(
+    heading.className
+);
+
+
+
+
+// Selecting DOM Elements
+
+// getElementById
+let h1 =
+document.getElementById("title");
+
+console.log(h1);
+
+
+
+
+
+// getElementsByClassName
+let p =
+document.getElementsByClassName("msg");
+
+console.log(p);
+
+
+
+
+// getElementsByTagName
+let allP =
+document.getElementsByTagName("p");
+
+
+let h11 =
+document.querySelector("#title");
+
+
+let pp =
+document.querySelectorAll(".msg");
+
+
+
+let p1 =
+document.querySelector("p");
+
+console.log(  p1.parentElement);
+
+
+let div =
+document.getElementById("parent");
+
+console.log(
+    div.children
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// creating a element
+
+let paragraphElement =
+document.createElement("p");
+
+paragraphElement.innerText= "hello"
+
+document.body.append(
+    paragraphElement
+);
+
+///////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+let clickButton =document.getElementById( "clickButton");
+
+clickButton.addEventListener(  "click", function(){
+
+        console.log(  "Button Pressed"  );   });
+
+
+
+        let addButton =document.getElementById("addButton");
+
+let containerElement =document.getElementById("container");
+
+addButton.addEventListener("click",() => {let paragraphElement =    document.createElement("p");
+
+        paragraphElement.innerText ="Sameer";
+
+        containerElement.append(   paragraphElement ); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
