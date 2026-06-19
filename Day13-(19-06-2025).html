@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+<button id="paymentButton">
+    Pay Now
+</button>
+
+
+<br>
+
+<input
+id="searchField"
+/>
+<br>
+
+
+
+
+<input id="searches" type="text">
+<button id="search"> Find Now </button>
+
+
+
+
+<div id="profileCard">Profile</div>
+
+
+
+
+
+<button id="deleteItemButton">Delete</button>
+<br>
+<h1 id="countdownDisplay">10</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>// An Event Listener waits for an event and executes a function when the event occurs.
+
+
+// what is Event
+
+
+// Click
+
+// Typing
+
+// Mouse Hover
+
+// Form Submit
+
+// Key Press
+
+
+// Event Listener waits for the events o occurs
+
+// element.addEventListener(
+//     "click",
+
+//     function(){
+
+//         console.log(
+//             "Button Clicked"
+//         );
+
+//     }
+// );
+
+
+// click 
+
+let paymentButton =
+document.getElementById(
+"paymentButton"
+);
+
+paymentButton.addEventListener(
+"click",
+
+function(){
+
+console.log(
+"Payment Started"
+);
+
+}
+);
+
+
+
+// typing
+let searchField =
+document.getElementById(
+"searchField"
+);
+
+searchField.addEventListener(
+
+"input",
+
+function(){console.log(searchField.value);});
+
+
+
+
+ let searching = document.getElementById("searches")
+searching.addEventListener("input", function() {console.log("searching")});
+
+let k = document.getElementById("search")
+k.addEventListener("click",function(){ console.log("Searching") })
+
+
+
+
+// mouse 
+
+let profileCard =
+document.getElementById(
+"profileCard"
+);
+
+profileCard.addEventListener(
+
+"mouseover",
+
+function(){
+
+console.log(
+"Mouse Entered"
+);
+
+}
+
+);
+
+
+
+// delete
+let deleteItemButton =
+document.getElementById(
+"deleteItemButton"
+);
+
+deleteItemButton.addEventListener(
+
+"click",
+
+function(event){
+
+console.log(
+event
+);
+
+}
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// JavaScript normally runs line by line.
+
+
+console.log("Step 1");
+
+console.log("Step 2");
+
+console.log("Step 3");
+
+// This is called Synchronous JavaScript
+
+
+// setTimeout
+// Executing a code once in the future
+
+// setTimeout(function () {}, time);
+
+
+console.log("Order Food"); // first 
+
+setTimeout(function () {  console.log("Food Arrived");}, 5000);// after time out 
+
+console.log("Watch YouTube"); // second
+
+// Asynchronous JavaScript break the line and jump to next based on conditionn
+//  and return the value after satisfying the codition 
+
+
+setTimeout(function () {console.log("Hello Sameer");}, 3000);
+
+
+// [ 1000= 1 second ]
+
+
+
+console.log("Start");
+
+setTimeout(function () {  console.log("end");}, 2000);
+
+console.log("middle");
+
+
+
+
+
+
+// What is a clear timeout? clearTimeout()
+// Sometimes we start the timer and after that no need then say "No cancel it."
+
+
+
+let welcomeMessageTimer = setTimeout(function () {  console.log("Welcome");}, 5000);
+
+clearTimeout(welcomeMessageTimer); //Output: nohing
+
+
+
+
+
+
+// What is setInterval?  setInterval()
+//  Till now setTimeout was running once. But if it has to be run every 2 seconds
+
+
+
+setInterval(function () {console.log("Hello this set intervel ");}, 2000);
+
+
+
+
+
+// clearInterval ?
+// to stop Interval 
+
+
+let offerTimer = setInterval(function () {console.log("Offer Running ");}, 1000);
+
+clearInterval(offerTimer);
+
+
+// Asynchronous JavaScript: JavaScript can run future work without stopping the current code.
+//  setTimeout(): Runs the code once after a delay. 
+//  setInterval(): Runs the code repeatedly after a fixed interval. 
+//  clearTimeout(): Cancels the timeout.
+//   clearInterval(): Stops the interva
+
+
+
+let remainingSeconds = 10;
+
+let countdownDisplay =
+document.getElementById("countdownDisplay");
+
+let countdownTimer = setInterval(function () {
+
+    remainingSeconds--;
+
+    countdownDisplay.textContent =
+    remainingSeconds;
+
+    if (remainingSeconds === 0) {
+
+        clearInterval(countdownTimer);
+
+    }
+
+}, 1000);
+
+let stopwatch = 1
+ let stop= setInterval(() => {  stopwatch++;console.log(stopwatch)
+
+if (stopwatch===10){ clearInterval(stop)}}, 1000);
+
+
+
+
+
+                                                                                                                    
+</script>
+
+
+
+
+</body>
+</html>
