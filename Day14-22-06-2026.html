@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+<div id="outerBox">
+
+    <button id="buyButton">
+        Buy Now
+    </button>
+
+</div>
+
+
+
+<div id="productCard">
+
+    <button id="addCartButton">
+
+        Add To Cart
+
+    </button>
+
+</div>
+
+
+
+
+<div id="mainBox">
+
+    <button id="orderButton">
+
+        Order
+
+    </button>
+
+</div>
+
+
+
+
+
+<ul id="productList">
+
+    <li>Mobile</li>
+
+    <li>Laptop</li>
+
+    <li>Tablet</li>
+
+</ul>
+
+
+
+
+
+ <button id="loginButton">
+
+        loginButton
+
+    </button>
+
+
+<br>
+
+
+<img id="profileImage" src="./OIP.webp" alt="Reload" width="230px" height="230px">
+
+
+
+
+
+
+<br>
+
+<input id="searchBox" type="text">
+<button>type</button>
+
+
+
+
+<input id="searchInput" type="text">
+
+<h2 id="resultText"></h2>
+
+
+<input
+id="gameInput"
+type="text">
+
+
+
+
+
+
+
+<h1 id="scrollCounter">
+
+0
+
+</h1>
+
+
+
+
+<input
+id="searchBox1"
+type="text"
+placeholder="Search Product">
+
+
+
+
+
+
+
+
+
+<button id="orderButton">
+    Place Order
+</button>
+
+
+
+
+
+<button id="loginButton">
+
+    Login
+
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+// When an event occurs on a child element, that event travels to the parent element.
+//  This process is called event bubbling.
+
+
+        let outerBox =
+document.getElementById("outerBox");
+
+let buyButton =
+document.getElementById("buyButton");
+
+outerBox.addEventListener("click", function () {
+
+    console.log("Outer Box Clicked");
+
+});
+
+buyButton.addEventListener("click", function () {
+
+    console.log("Button Clicked");
+
+});
+
+
+
+
+
+
+
+let productCard =
+document.getElementById("productCard");
+
+let addCartButton =
+document.getElementById("addCartButton");
+
+productCard.addEventListener("click", function () {
+
+    console.log("Product Card Opened");
+
+});
+
+addCartButton.addEventListener("click", function () {
+
+    console.log("Product Added");
+
+});
+
+
+
+
+// Stopping
+buyButton.addEventListener("click",
+
+function (event) {
+
+    event.stopPropagation();
+
+    console.log("Button Clicked");
+
+});
+
+
+
+
+
+
+
+// Event Capturing
+
+
+// When an event starts from the parent and travels to the child, that process is called event capturing.
+
+
+
+
+
+
+let mainBox =
+document.getElementById("mainBox");
+
+let orderButton =
+document.getElementById("orderButton");
+
+mainBox.addEventListener(
+
+    "click",
+
+    function () {
+
+        console.log("Main Box");
+
+    },
+
+    true
+
+);
+
+orderButton.addEventListener(
+
+    "click",
+
+    function () {
+
+        console.log("Order Button");
+
+    },
+
+    true
+
+);
+
+
+
+
+
+
+// Event Delegation
+// Event Delegation is a technique where a parent element handles events for its child elements using event bubbling.
+
+
+
+let productList =
+document.getElementById("productList");
+
+productList.addEventListener("click", function (event) {
+
+    console.log(event.target.textContent);
+
+});
+
+
+
+
+
+
+
+// Click Event
+
+loginButton.addEventListener("click", function () {
+
+    console.log("Button Clicked");
+
+});
+
+
+
+let searchInput =
+document.getElementById("searchInput");
+
+let resultText =
+document.getElementById("resultText");
+
+searchInput.addEventListener(
+    "input",
+    function () {
+
+        resultText.textContent =
+        searchInput.value;
+
+    }
+);
+
+
+// Double Click Event
+
+
+profileImage.addEventListener("dblclick", function () {
+
+    console.log("Image Liked");
+
+});
+
+
+
+
+// Input Event
+
+searchBox.addEventListener("input", function () {
+
+    console.log("Typing...");
+
+});
+
+
+
+
+// Change Event
+
+// countrySelect.addEventListener("change", function () {
+
+//     console.log("Country Changed");
+
+// });
+
+
+
+
+// 5. Submit Event
+
+
+// registrationForm.addEventListener("submit", function (event) {
+
+//     event.preventDefault();
+
+// });
+
+
+
+// keydown
+
+
+
+let gameInput =
+document.getElementById("gameInput");
+
+gameInput.addEventListener(
+    "keydown",
+    function () {
+
+        console.log(
+            "Key Pressed"
+        );
+
+    }
+);
+
+
+
+
+// Throttling limits how often a function can execute within a given time period.
+
+
+let isThrottleActive =
+false;
+
+window.addEventListener(
+    "scroll",
+    function () {
+
+        if (
+            isThrottleActive
+        ) {
+            return;
+        }
+
+        isThrottleActive =
+        true;
+
+        console.log(
+            "Scroll Event"
+        );
+
+        setTimeout(
+            function () {
+
+                isThrottleActive =
+                false;
+
+            },
+            2000
+        );
+
+    }
+);
+
+
+
+
+
+
+
+// Debouncing delays function execution until the user stops triggering the event.
+
+
+let searchTimer;
+
+let searchBox1 =
+document.getElementById("searchBox");
+
+searchBox1.addEventListener(
+    "input",
+    function () {
+
+        clearTimeout(
+            searchTimer
+        );
+
+        searchTimer =
+        setTimeout(
+            function () {
+
+                console.log(
+                    "Searching..."
+                );
+
+            },
+            1000
+        );
+
+    }
+);
+
+
+
+
+
+function greetUser() {
+
+    console.log("Hello Sameer");
+
+}
+
+greetUser();//normal
+
+
+
+
+
+
+
+function prepareOrder(orderReadyCallback) {
+
+    console.log("Preparing Order");
+
+    orderReadyCallback();
+
+}
+
+function notifyCustomer() {
+
+    console.log("Order Ready");
+
+}
+
+prepareOrder(notifyCustomer);
+
+
+
+
+
+
+
+
+function calculateBill(
+    itemPrice,
+    displayCallback
+) {
+
+    displayCallback(itemPrice);
+
+}
+
+function showPrice(
+    finalPrice
+) {
+
+    console.log(
+        finalPrice
+    );
+
+}
+
+calculateBill(
+    500,
+    showPrice
+);
+
+
+
+
+
+
+
+function calculateBill(
+    itemPrice,
+    displayCallback
+) {
+
+    displayCallback(itemPrice);
+
+}
+
+function showPrice(
+    finalPrice
+) {
+
+    console.log(
+        finalPrice
+    );
+
+}
+
+calculateBill(
+    500,
+    showPrice
+);
+
+
+
+
+let loginButton =
+document.getElementById(
+    "loginButton"
+);
+
+loginButton.addEventListener(
+    "click",
+
+    function () {
+
+        console.log(
+            "Login Clicked"
+        );
+
+    }
+);
+
+
+
+
+
+
+
+
+
+
+setTimeout(
+
+    function () {
+
+        console.log(
+            "Welcome"
+        );
+
+    },
+
+    3000
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
