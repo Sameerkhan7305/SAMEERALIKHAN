@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+// A Promise is an object that represents the result of a future operation.
+
+
+
+
+let foodOrderPromise =
+new Promise(
+    function (
+        resolve,
+        reject
+    ) {
+
+    }
+);
+
+
+
+let examResultPromise1 =
+new Promise(
+    function (
+        resolve,
+        reject
+    ) {
+
+        resolve(
+            "Pass"
+        );
+
+    }
+);
+
+
+
+
+
+
+// .then() 
+
+
+
+
+let examResultPromise =
+new Promise(
+    function (
+        resolve,
+        reject
+    ) {
+
+        resolve(
+            "Pass"
+        );
+
+    }
+);
+
+examResultPromise.then(
+    function (
+        result
+    ) {
+
+        console.log(
+            result
+        );
+
+    }
+);
+
+
+
+
+
+
+// .catch()
+
+
+
+
+
+let examResultPromise2 =
+new Promise(
+    function (
+        resolve,
+        reject
+    ) {
+
+        reject(
+            "Fail"
+        );
+
+    }
+);
+
+examResultPromise2.catch(
+    function (
+        error
+    ) {
+
+        console.log(
+            error
+        );
+
+    }
+);
+
+
+
+
+// resolve()
+
+// Marks a promise as successful.
+
+// reject()
+
+// Marks a promise as failed.
+
+// .then()
+
+// Handles successful promise results.
+
+// .catch()
+
+// Handles failed promise results.
+
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+
+// Promise.all()
+// Runs multiple promises simultaneously and waits for all to succeed
+
+
+// Promise 1
+let profilePromise =Promise.resolve("Profile");
+
+
+
+// Promise 2
+let ordersPromise =Promise.resolve("Orders");
+
+
+
+
+// Promise 3
+let notificationPromise =Promise.resolve("Notifications");
+
+
+
+
+
+// Promise.all()
+Promise.all([
+
+    profilePromise,
+
+    ordersPromise,
+
+    notificationPromise
+
+]).then(function(result){
+
+    console.log(result);
+
+});
+
+
+
+
+
+
+let firstTask =
+Promise.resolve("HTML");
+
+let secondTask =
+Promise.resolve("CSS");
+
+let thirdTask =
+Promise.resolve("JavaScript");
+
+
+
+Promise.all([
+
+    firstTask,
+
+    secondTask,
+
+    thirdTask
+
+]).then(function(result){
+
+    console.log(result);
+
+});
+
+
+// Promise 1
+let profilePromise1 =
+Promise.resolve("Profile");
+// Promise 2
+let ordersPromise1 =
+Promise.reject("Orders Failed");
+// Promise 3
+let notificationPromise1 =
+Promise.resolve("Notifications");
+
+
+
+
+Promise.all([
+
+    profilePromise1,
+
+    ordersPromise1,
+
+    notificationPromise1
+
+])
+
+.catch(function(error){
+
+    console.log(error);
+
+});
+
+
+
+
+// Promise.all() waits for all promises to be fulfilled and returns their results.
+
+
+
+
+// Promise.race()
+
+// In multiple promises, the result of the promise that is completed
+//  (resolved or rejected) first is returned
+
+
+
+
+
+let slowPromise =
+new Promise(function(resolve){
+
+    setTimeout(function(){
+
+        resolve("Slow");
+
+    }, 2000);
+
+});
+
+
+let fastPromise =
+new Promise(function(resolve){
+
+    setTimeout(function(){
+
+        resolve("Fast");
+
+    }, 1000);
+
+});
+
+
+
+
+Promise.race([
+
+    slowPromise,
+
+    fastPromise
+
+]).then(function(result){
+
+    console.log(result);
+
+});
+
+
+
+
+
+
+// Failure Example
+// Promise 1
+let failedPromise =
+new Promise(function(
+    resolve,
+    reject
+){
+
+    setTimeout(function(){
+
+        reject("Server Error");
+
+    }, 1000);
+
+});
+
+
+
+
+
+// Promise 2
+let successPromise =
+new Promise(function(resolve){
+
+    setTimeout(function(){
+
+        resolve("Success");
+
+    }, 3000);
+
+});
+
+
+
+
+// Race
+Promise.race([
+
+    failedPromise,
+
+    successPromise
+
+])
+
+.catch(function(error){
+
+    console.log(error);
+
+});
+
+
+
+
+
+// Promise.allSettled()
+// All promises yield results, whether it is success or failure.
+// Promise.allSettled() returns the results of all promises regardless of whether they succeed or fail.
+// Promise 1
+let htmlPromise =
+Promise.resolve("HTML");
+// Promise 2
+let cssPromise =
+Promise.reject("CSS Error");
+// Promise 3
+let javascriptPromise =
+Promise.resolve("JavaScript");
+
+
+
+Promise.allSettled([
+
+    htmlPromise,
+
+    cssPromise,
+
+    javascriptPromise
+
+])
+
+.then(function(result){
+
+    console.log(result);
+
+});
+
+
+
+
+// Promise.any()
+
+// In multiple promises, the result of the first successful promise is returned 
+
+
+
+// Promise 1
+
+let firstPromise =
+Promise.reject("Server 1 Failed");
+
+
+
+// Promise 2
+
+let secondPromise =
+Promise.resolve("Server 2 Success");
+
+
+// Promise 3
+let thirdPromise =
+Promise.reject("Server 3 Failed");
+
+
+
+
+// Promise.any()
+Promise.any([
+
+    firstPromise,
+
+    secondPromise,
+
+    thirdPromise
+
+])
+
+.then(function(result){
+
+    console.log(result);
+
+});
+
+Promise.any([
+
+    Promise.reject("Error 1"),
+
+    Promise.reject("Error 2"),
+
+    Promise.reject("Error 3")
+
+])
+
+.catch(function(error){
+
+    console.log(error);
+
+});
+
+// Promise.any() returns the first fulfilled promise and ignores rejected promises.
+
+
+
+
+
+// Async/Await is a modern and easy way to write Promise. 
+
+
+// Before Async/Await
+// fetchUser()
+
+// .then(function(user){
+
+//     console.log(user);
+
+// });
+
+
+
+// let user = await fetchUser();
+
+// console.log(user);
+
+
+let foodPromise =
+new Promise(function(resolve){
+
+    setTimeout(function(){
+
+        resolve("Burger Ready");
+
+    }, 3000);
+
+});
+
+
+async function getFood() {
+
+    let food =
+    await foodPromise;
+
+    console.log(food);
+
+}
+
+
+
+
+// Promise 1
+let loginPromisef =
+Promise.resolve("Login Done");
+
+
+
+// Promise 2
+let profilePromisef =
+Promise.resolve("Profile Loaded");
+
+
+// Promise 3
+let ordersPromisef =
+Promise.resolve("Orders Loaded");
+
+
+// Async Function
+async function loadDashboard() {
+
+    let login =
+    await loginPromisef;
+
+    console.log(login);
+
+    let profile =
+    await profilePromisef;
+
+    console.log(profile);
+
+    let orders =
+    await ordersPromisef;
+
+    console.log(orders);
+
+}
+
+
+
+// Destructuring is a shortcut to extracting values ​​into direct variables.
+
+
+
+
+
+// Array Destructuring
+// Normal Way
+let fruitBasket1 = [
+    "Apple",
+    "Mango",
+    "Banana"
+];
+
+let firstFruit2 =
+fruitBasket1[0];
+
+let secondFruit3=
+fruitBasket1[1];
+
+
+
+
+// Destructuring Way
+let fruitBasket = [
+    "Apple",
+    "Mango",
+    "Banana"
+];
+
+let [
+    firstFruit,
+    secondFruit
+] = fruitBasket;
+
+
+
+
+
+
+
+
+let cities = [
+    "Delhi",
+    "Mumbai",
+    "Hyderabad"
+];
+
+let [
+    firstCity,
+    ,
+    thirdCity
+] = cities;
+
+
+
+
+let employeeDetails = {
+
+    employeeName:
+    "Sameer",
+
+    employeeAge:
+    26
+
+};
+
+
+
+// Destructuring is a JavaScript feature used to extract values from arrays and objects
+//  into separate variables.
+
+
+
+
+
+
+
+
+// An Iterator is an object that helps in accessing the elements of a collection
+//  (array, string, etc.) one by one.
+
+
+
+let cityNames = [
+
+    "Delhi",
+
+    "Mumbai",
+
+    "Hyderabad"
+
+];
+
+
+let cityIterator =
+
+cityNames[Symbol.iterator]();
+
+
+console.log(
+
+    cityIterator.next()
+
+);
+
+
+
+// An iterator is an object that allows sequential access to elements of a collection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
