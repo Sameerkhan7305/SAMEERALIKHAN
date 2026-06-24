@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+<input id="userNameInput">
+
+<button id="saveButton">
+
+Save
+
+</button>
+
+
+
+<input
+id="userNameInput1"
+type="text">
+
+<button
+id="saveButton1">
+
+Save
+
+</button>
+
+
+
+
+<!-- Method 1: setItem() -->
+HTML
+<input id="userNameInput5">
+
+<button id="saveButton5">
+
+Save
+
+</button>
+
+
+
+<input id="productQuantity">
+
+<button id="checkButtonn">
+
+Check
+
+</button>
+
+
+
+
+
+
+
+
+
+    <script>
+// A module is a JavaScript file that contains reusable code.
+
+
+
+// function loginUser() {
+
+//     console.log("Login");
+
+// }
+
+// export default loginUser;
+
+
+
+// import loginUser
+// from "./user.js";
+
+// loginUser();
+
+
+
+
+
+
+
+
+
+// Web Storage is a browser feature used to store data on the client side.
+
+
+
+let saveButton =
+document.getElementById("saveButton");
+
+let userNameInput =
+document.getElementById("userNameInput");
+
+saveButton.addEventListener(
+
+    "click",
+
+    function(){
+
+        localStorage.setItem(
+
+            "userName",
+
+            userNameInput.value
+
+        );
+
+    }
+
+);
+
+
+
+
+// setItem()
+
+
+
+localStorage.setItem(
+    "studentName",
+    "Sameer"
+);
+
+
+
+let saveButtonn =
+document.getElementById(
+    "saveButton5"
+);
+
+let userNameInputt =
+document.getElementById(
+    "userNameInput5"
+);
+
+saveButtonn.addEventListener(
+
+    "click",
+
+    function(){
+
+        sessionStorage.setItem(
+
+            "userName",
+
+            userNameInputt.value
+
+        );
+
+    }
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// getItem()
+
+
+localStorage.getItem(
+    "key"
+);
+
+
+
+
+
+let studentName =
+
+localStorage.getItem(
+    "studentName"
+);
+
+console.log(studentName);
+
+
+
+
+
+let userNameInput1 =
+document.getElementById(
+    "userNameInput1"
+);
+
+let saveButton1 =
+document.getElementById(
+    "saveButton1"
+);
+
+saveButton1.addEventListener(
+
+    "click",
+
+    function(){
+
+        localStorage.setItem(
+
+            "userName",
+
+            userNameInput1.value
+
+        );
+
+    }
+
+);
+
+
+
+
+
+let userName =
+
+sessionStorage.getItem(
+    "userName"
+);
+
+console.log(userName);
+
+
+// removeItem()
+
+
+// sessionStorage.removeItem(
+//     "userName"
+// );
+
+
+
+
+
+// clear()
+
+
+sessionStorage.clear();
+
+
+
+
+
+sessionStorage.setItem(
+    "name",
+    "Sameer"
+);
+
+// Page 2:
+
+let name =
+
+sessionStorage.getItem(
+    "name"
+);
+
+
+
+
+
+
+// Local Storage is a browser storage mechanism that stores data permanently as key-value pairs.
+
+
+
+
+// try
+// The code which can generate error is written in try block.
+
+try {
+
+    console.log("Class Started");
+
+    unknownStudentName;
+
+    console.log("Class Ended");
+
+}
+
+catch(error) {
+
+    console.log("Something Went Wrong");
+
+}
+
+
+
+
+
+
+try {
+
+    classroomCapacity;
+
+}
+
+catch(error) {
+
+    console.log(error);
+
+}
+
+
+
+
+// let checkButton0 =
+// document.getElementById(
+//     "checkButton"
+// );
+
+// checkButton0.addEventListener(
+
+//     "click",
+
+//     function(){
+
+//         try {
+
+//             let enteredQuantity = 10;
+
+//             console.log(
+//                 enteredQuantity
+//             );
+
+//         }
+
+//         catch(error){
+
+//             console.log(error);
+
+//         }
+
+//     }
+
+// );
+
+
+
+let checkButtonv =
+document.getElementById(
+    "checkButtonn"
+);
+
+checkButtonv.addEventListener(
+
+    "click",
+
+    function(){
+
+        try {
+
+            let enteredQuantity = 10;
+
+            console.log(
+                enteredQuantity
+            );
+
+        }
+
+        catch(error){
+
+            console.log(error);
+
+        }
+
+    }
+
+);
+
+
+
+try {
+
+    console.log(
+        "Payment Processing"
+    );
+
+}
+
+catch(error){
+
+    console.log(error);
+
+}
+
+finally{
+
+    console.log(
+        "Payment Process Finished"
+    );
+
+}
+
+
+
+
+
+
+// throw Keyword
+
+
+let customerAge = 15;
+
+try {
+
+    if(customerAge < 18){
+
+        throw new Error(
+            "Age Must Be 18+"
+        );
+
+    }
+
+    console.log(
+        "Registration Success"
+    );
+
+}
+
+catch(error){
+
+    console.log(
+        error.message
+    );
+
+}
+// catch 
+// Agar try block me error aaye to catch block us error ko handle karta hai
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
