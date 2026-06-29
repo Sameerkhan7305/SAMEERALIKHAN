@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Write</title>
+</head>
+<body>
+<h1>JavaScript Output Methods</h1>
+    <h1>Open Console</h1>
+
+    <h1 id="courseTitle">
+
+Old Course
+
+</h1>
+
+
+<h2 id="statusMessage">
+
+Loading...
+
+</h2>
+
+
+
+
+
+<p id="profileMessage">
+
+Welcome
+
+<span style="display:none">
+
+Sameer
+
+</span>
+
+</p>
+
+
+
+<h1 id="studentHeading">
+
+Welcome
+
+</h1>
+
+<button id="updateButton">
+
+Update
+
+</button>
+
+
+
+
+    <script>
+        // ================================================================= 
+        // console.log()
+        // console.log() displays output in the browser's Developer Console.
+
+
+
+        // Why use it? The developer needs to check the value of the variable. 
+        // This is not for the user. It is for debugging.
+
+        let studentFullName = "Sameer";
+
+console.log(studentFullName);
+
+
+let loginStatus = true;
+
+console.log(loginStatus);
+// ===================================================================================== 
+
+
+
+
+// =====================================================================================
+// alert()
+
+// alert() displays a popup message to the user.
+
+
+alert("Welcome to JavaScript");
+// =====================================================================================
+
+let learnerName = "Sameer ali khan";
+
+console.log(learnerName);
+
+alert("Welcome Sameer!");
+// =====================================================================================
+
+
+
+
+
+// =====================================================================================
+// document.write()
+document.write("Welcome to JavaScript");
+// document.write() writes content directly to the HTML page.
+// =====================================================================================
+
+
+
+
+// =====================================================================================
+// innerHTML
+let courseTitle =
+document.getElementById(
+"courseTitle"
+);
+
+courseTitle.innerHTML =
+"JavaScript Masterclass";
+// =====================================================================================
+
+
+
+// =====================================================================================
+// innerText
+
+// innerText reads or changes visible text
+
+let statusMessage =
+document.getElementById(
+"statusMessage"
+);
+
+statusMessage.innerText =
+"Order Confirmed";
+// =====================================================================================
+
+
+
+
+// =====================================================================================
+
+// textContent
+// Returns or changes the full text of the textContent element
+
+let profileMessage =
+document.getElementById(
+"profileMessage"
+);
+
+console.log(
+profileMessage.textContent
+);
+
+// =====================================================================================
+
+
+
+
+
+// =====================================================================================
+
+let updateButton =
+document.getElementById(
+"updateButton"
+);
+
+let studentHeading =
+document.getElementById(
+"studentHeading"
+);
+
+updateButton.addEventListener(
+
+"click",
+
+function(){
+
+studentHeading.innerText =
+"Welcome Sameer";
+
+});
+
+// =====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

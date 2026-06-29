@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="browserInfoButton">
+Show Browser
+</button>
+
+
+
+<button id="loadUsersButton">
+Load Users
+</button>
+
+<ul id="userList"></ul>
+
+<button id="browserDetailsButton">
+Browser Info
+</button>
+
+<button id="reloadPageButton">
+Reload Page
+</button>
+
+
+
+    <script>
+// =====================================================================================
+
+// Browser Object Model (BOM)
+// JavaScript----Browser
+
+// Example:
+
+window.alert("Hello");
+
+// it wrorks with browser features 
+// Browser Object Model (BOM) allows JavaScript to interact with the browser and its features.
+// =====================================================================================
+
+
+
+
+
+
+
+// =====================================================================================
+
+// Window Object
+// The window object is the top-level object of the browser.
+
+console.log(window);
+
+window.alert("Welcome Sameer");
+alert("Welcome Sameer");
+
+// =====================================================================================
+
+
+
+
+
+// =====================================================================================
+
+// . Navigator Object
+// Definition
+
+// The navigator object provides information about the browser.
+
+let browserInfoButton =
+document.getElementById(
+    "browserInfoButton"
+);
+
+browserInfoButton.addEventListener(
+    "click",
+    function () {
+
+        console.log(
+            navigator.userAgent
+        );
+
+    }
+);
+// =====================================================================================
+
+
+
+
+
+
+
+// =====================================================================================
+
+// Location Object
+// Definition
+
+// The location object provides information about the current webpage URL.
+
+console.log(location.href);
+
+
+// location.reload();
+
+// =====================================================================================
+
+
+
+// =====================================================================================
+
+// History Object
+// The history object is used to move forward and backward in browser history.
+
+
+
+history.back();
+
+
+// =====================================================================================                
+
+
+
+
+
+
+
+
+
+
+let browserDetailsButton =
+document.getElementById(
+    "browserDetailsButton"
+);
+
+let reloadPageButton =
+document.getElementById(
+    "reloadPageButton"
+);
+
+browserDetailsButton.addEventListener(
+    "click",
+    function () {
+
+        console.log(
+            navigator.userAgent
+        );
+
+        console.log(
+            location.href
+        );
+
+    }
+);
+
+reloadPageButton.addEventListener(
+    "click",
+    function () {
+
+        location.reload();
+
+    }
+);
+
+
+
+
+
+
+// API Definition
+// Simple Definition
+
+// API (Application Programming Interface) is a bridge that allows two applications to communicate with each other
+
+
+
+
+
+
+let loadUsersButton =
+document.getElementById(
+    "loadUsersButton"
+);
+
+let userList =
+document.getElementById(
+    "userList"
+);
+
+loadUsersButton.addEventListener(
+
+    "click",
+
+    function () {
+
+        fetch(
+            "https://jsonplaceholder.typicode.com/users"
+        )
+
+        .then(function (response) {
+
+            return response.json();
+
+        })
+
+        .then(function (users) {
+
+            users.forEach(function (currentUser) {
+
+                let listItem =
+                document.createElement("li");
+
+                listItem.innerText =
+                currentUser.name;
+
+                userList.appendChild(listItem);
+
+            });
+
+        });
+
+    }
+
+);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
