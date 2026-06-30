@@ -1,0 +1,237 @@
+.profileCard{
+
+width:250px;
+
+padding:20px;
+
+border:3px solid blue;
+
+margin:30px;
+
+background-color:lightyellow;
+
+}
+
+.x{
+
+    width:95px;
+    height: 130px;
+
+padding-top:20px;
+
+padding-right:40px;
+
+padding-bottom:20px;
+
+padding-left:10px;
+
+border:3px solid blue;
+
+/* margin:30px; */
+
+background-color:lightyellow;
+}
+
+
+
+.courseCard{
+
+width:300px;
+
+padding:25px;
+
+border:2px solid green;
+
+margin:40px;
+
+background-color:aliceblue;
+
+}
+
+
+.courseCard{
+
+width:300px;
+
+padding:20px;
+
+border:5px solid navy;
+
+box-sizing:border-box;
+
+background-color:lightyellow;
+
+}
+
+
+
+.firstNotice{
+
+margin-bottom:40px;
+
+background-color:lightblue;
+
+}
+
+.secondNotice{
+
+margin-top:30px;
+
+background-color:lightgreen;
+
+}
+
+
+
+.searchInput{
+
+border:2px solid gray;
+
+padding:10px;
+
+}
+
+.searchInput:focus{
+
+outline:4px solid green;
+
+outline-offset:4px;
+
+}
+
+.newsSection{
+
+display:block;
+
+background-color:lightblue;
+
+}
+
+.sportsSection{
+
+display:block;
+
+background-color:lightgreen;
+
+}
+
+span{
+
+display:inline;
+
+background-color:yellow;
+
+}
+
+.courseBox{
+
+display:inline-block;
+
+width:120px;
+
+height:60px;
+
+background-color:lightcoral;
+
+margin:10px;
+
+}
+
+.hiddenMessage{
+
+display:none;
+
+}
+
+
+
+
+
+.staticBox{
+    position: static;
+    background-color: lightblue;
+}
+
+.relativeBox{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightgreen;
+}
+
+.absoluteContainer{
+    position: relative;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.absoluteBox{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: orange;
+}
+
+.fixedBox{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+}
+
+.stickyBox{
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+}
+
+
+
+
+.leftBox{
+    float:left;
+    width:150px;
+    height:100px;
+    background-color:lightblue;
+    margin:10px;
+}
+
+.rightBox{
+    float:right;
+    width:150px;
+    height:100px;
+    background-color:lightgreen;
+    margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

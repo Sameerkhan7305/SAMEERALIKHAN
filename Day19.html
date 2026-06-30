@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./day19.css">
+</head>
+<body>
+    
+CSS Box Model
+<h6 class="x"  >
+    
++----------------------+
+|      Margin          |
+|  +----------------+  |
+|  |    Border      |  |
+|  | +------------+ |  |
+|  | |  Padding   | |  |
+|  | | +--------+ | |  |
+|  | | |Content | | |  |
+|  | | +--------+ | |  |
+|  | +------------+ |  |
+|  +----------------+  |
++----------------------+</h6>
+
+
+
+<div class="profileCard">
+
+Sameer Khan
+
+</div>
+CSS Box Model defines how every HTML element is displayed using Content, Padding, Border, and Margin.
+<div class="courseCard">
+
+CSS Box Model
+
+</div>
+
+<h6>box-sizing </h6>
+The box-sizing property controls how the total width and height of an element are calculated. <br>
+border-box
+
+<div class="courseCard">
+
+CSS Box Sizing
+
+</div>
+
+Margin Collapse is the combining of adjacent vertical margins into a single margin
+<div class="firstNotice">
+
+First Box
+
+</div>
+
+<div class="secondNotice">
+
+Second Box
+
+</div>
+<br>
+<h1>overflow:</h1>
+The overflow property controls what happens when content is too large for its container.
+
+<div class="notificationPanel">
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+</div>
+
+
+
+
+<br>
+
+
+
+
+
+overflow: visible; (Default)
+CSS
+<!-- .articleBox{
+
+width:250px;
+
+height:100px;
+
+border:2px solid navy;
+
+overflow:visible;
+
+} -->
+
+
+<br><br><br><br>
+
+
+2. overflow: hidden;
+<!-- CSS
+.articleBox{
+
+width:250px;
+
+height:100px;
+
+border:2px solid navy;
+
+overflow:hidden;
+
+} -->
+
+
+
+<br><br><br><br>
+
+
+
+3. overflow: scroll;
+<!-- 
+.articleBox{
+
+width:250px;
+
+height:100px;
+
+border:2px solid navy;
+
+overflow:scroll;
+
+} -->
+
+
+<br><br><br><br>
+
+4. overflow: auto;
+
+
+<!-- .articleBox{
+
+width:250px;
+
+height:100px;
+
+border:2px solid navy;
+
+overflow:auto;
+
+} -->
+
+
+<br><br><br>
+
+
+<input
+
+class="searchInput"
+
+type="text"
+
+placeholder="Search">
+
+
+<br><br><br>
+
+
+
+Display Property:
+The display property defines how an HTML element is displayed on the webpage
+
+
+<br><br><br>
+
+
+1. display: block
+
+
+A block element always starts on a new line and takes up the entire available width
+
+
+
+HTML
+<div class="newsSection">
+
+Breaking News
+
+</div>
+
+<div class="sportsSection">
+
+Sports News
+
+</div>
+
+
+
+<br><br><br>
+
+
+2. display: inline
+Definition
+
+The inline element takes up only as much space as its content requires.
+
+
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+
+<br><br><br>
+
+3. display: inline-block
+Inline-block elements stay on the same line , but do widthmore than that.height
+
+
+<div class="courseBox">
+
+HTML
+
+</div>
+
+<div class="courseBox">
+
+CSS
+
+</div>
+
+<div class="courseBox">
+
+JS
+
+</div>
+
+<br><br><br>
+
+4. display: none
+Definition
+
+Element wont see in browser.
+
+
+
+<p class="hiddenMessage">
+
+Welcome Sameer
+
+</p>
+
+
+<br><br><br>
+
+Position Property:
+
+
+The position property specifies how an HTML element is positioned on a webpage.
+
+
+
+<br><br><br>
+
+
+
+<div class="staticBox">Static</div>
+
+<div class="relativeBox">Relative</div>
+
+<div class="absoluteContainer">
+    <div class="absoluteBox">Absolute</div>
+</div>
+
+<div class="fixedBox">Fixed</div>
+
+<div class="stickyBox">Sticky</div>
+
+<div style="height:1200px;"></div>
+<br><br><br>
+
+
+<h1>Float</h1>
+
+The float property is used to place an element on the left
+ or right side of its container, allowing other content to wrap around it.
+
+
+ <h1>Clear</h1>
+
+The clear property prevents an element from wrapping around floated elements
+
+<div class="leftBox">Left Box</div>
+
+<div class="rightBox">Right Box</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
