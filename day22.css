@@ -1,0 +1,291 @@
+.pageTitle{
+
+color:blue;
+
+text-align:center;
+
+font-size:40px;
+
+}
+
+
+.p {
+    font-size: 30px;
+    color: bisque;
+    background-color: black;
+    border: 4px solid blue;
+    text-align: center;
+
+}
+
+.pp{
+    text-align: start;
+    color: rgb(194, 0, 120);
+    text-wrap: initial;
+    text-decoration: underline;
+}
+
+.mainHeading{
+
+color:blue;
+
+}
+
+
+
+
+
+
+h1{
+
+color:blue;
+
+}
+
+.titleText{
+
+color:green;
+
+}
+
+#mainTitle{
+
+color:red;
+
+}
+
+
+#websiteTitle{
+
+color:red;
+
+}
+
+.headingStyle{
+
+color:green !important;
+
+}
+
+
+.headingText{
+
+color:#1565c0;
+
+}
+
+.descriptionText{
+
+color:rgb(80,80,80);
+
+}
+
+
+
+
+
+
+
+.bannerSection{
+
+height:250px;
+
+background-color:lightblue;
+
+background-image:url("https://picsum.photos/600/250");
+
+background-repeat:no-repeat;
+
+background-position:center;
+
+background-size:cover;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:35px;
+
+}
+
+
+
+
+.Back{
+    height: 250px;
+    background-image: url(https://picsum.photos/600/250);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    font-size: 50px;
+    font-family:fantasy ;
+    font-style: italic;
+    font-display: fallback;
+}
+
+
+
+.profileCard{
+
+width:250px;
+
+padding:20px;
+
+border:3px solid blue;
+
+border-radius:12px;
+
+text-align:center;
+
+}
+
+
+
+
+.bod{
+    width: 300px;
+    padding: 30px;
+    border: 3px dotted brown;
+    border-radius: 30px;
+    text-align:center;
+    border-width: 7px;
+}
+
+
+
+.infoCard{
+
+border:2px solid black;
+
+padding:20px;
+
+margin: 30pxpx;
+
+}
+
+
+.k{
+    border: 4px solid black;
+    padding-top:20px;
+
+padding-right:10px;
+
+padding-bottom:30px;
+
+padding-left:15px;
+margin-top:20px;
+
+margin-right:10px;
+
+margin-bottom:30px;
+
+margin-left:15px;
+}
+
+
+.profileBox{
+
+width:250px;
+
+padding:20px;
+
+border:3px solid blue;
+
+margin:30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

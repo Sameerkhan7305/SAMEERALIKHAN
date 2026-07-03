@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./day22.css">
+    <style>
+
+h1{
+
+color:green;
+
+}
+
+</style>
+
+</head>
+<body>
+    CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance, 
+    layout, colors, fonts, spacing, and overall design of HTML webpages.
+
+    <h1 class="pageTitle">
+
+Welcome to CSS
+
+</h1>
+
+<p>
+
+Learning CSS is fun.
+
+</p>
+
+<h1 class="p"> Hello everyone this is practical </h1>
+<p class="pp"> building the website using the css and hmml</p>
+
+<br><br>
+Types of CSS: <br>
+Inline CSS,<br>
+Internal CSS,<br>
+External CSS,<br>
+<br><br>
+Inline CSS:
+<p>Inline CSS is written directly inside an HTML element using the style attribute.</p>
+
+<h1 style="color:red;">
+
+Welcome to my website 
+
+</h1>
+<br><br>
+
+
+Internal CSS:
+
+<p>Internal CSS is written inside the style tag within the head section of an HTML document.</p>
+
+<br><br>
+<h1>
+
+Welcome to my website 
+
+</h1>
+<br><br>
+External CSS:
+<p>External CSS is written in a separate .css file and linked to an HTML document using the link tag.</p>
+
+<h1 class="mainHeading">
+
+Welcome to my website 
+
+</h1>
+CSS Selectors:
+<p style="color: blue;">CSS Selectors are used to select HTML elements that you want to style.</p>
+
+<br><br>
+Types of Selectors: <br>
+Universal Selector (*) <br>
+Element Selector <br>
+Class Selector <br>
+ID Selector <br>
+Group Selector <br>
+
+
+<br><br>
+
+Universal Selector (*): <br>
+
+Selects all HTML elements on the webpage.
+
+<br>
+
+<h1>Welcome</h1>
+
+<p>Paragraph</p>
+
+*{ <br>
+
+margin:0; <br>
+
+padding:0; <br>
+
+} <br>
+
+<br>
+
+
+<p>Element Selector </p>
+<p>Selects elements using their HTML tag name.</p>
+
+
+<h1>Welcome</h1>
+
+<h1>CSS</h1>
+h1{ <br>
+
+color:blue; <br>
+
+} <br>
+
+<br><br>
+<br>
+
+<p>Class Selector (.): </p><br>
+
+
+Selects all elements with the same class name. <br>
+
+.courseTitle{ <br>
+
+color:green; <br> 
+
+} <br>
+
+
+<h6>ID Selector (#) <br>
+
+
+Selects one unique HTML element using its ID.</h6>
+
+
+
+<h1 id="mainHeading">
+
+Welcome
+
+</h1>
+
+
+#mainHeading{ <br>
+
+color:red; <br>
+
+} <br>
+
+
+
+<h6>Group Selector: <br>
+
+
+Selects multiple elements together using commas</h6>
+
+
+<h1>Heading</h1>
+
+<p>Paragraph</p>
+
+h1,p{ <br>
+
+color:purple; <br>
+
+} <br>
+
+
+
+css
+
+<h1 id="mainTitle" class="titleText">
+
+Welcome
+
+</h1>
+
+
+CSS Specificity is the set of rules used by the browser to determine which CSS declaration
+ should be applied when multiple rules target the same element.
+
+
+
+
+<p>
+    !important <br>
+    ↓ <br>
+    Inline CSS <br>
+
+↓ <br>
+
+ID Selector (#) <br>
+
+↓ <br>
+
+Class Selector (.) <br>
+
+↓ <br>
+
+Element Selector <br>
+
+↓ <br>
+
+Universal Selector (*) <br>
+</p>
+
+<p style="color: rgb(255, 0, 0);">!important</p>
+!important is a CSS rule that gives a declaration the highest priority, overriding normal specificity rules
+
+
+<h1 id="websiteTitle" class="headingStyle">
+
+Learning CSS
+
+</h1>
+
+Green colour priority
+
+
+
+<br> <br>
+{
+
+color:rgba(255,0,0,0.5);
+
+}
+
+
+<p style="color: rgba(255,0,0,0.5);">CSS Colors are used to define the color of text, backgrounds, borders, and other HTML elements.</p>
+
+<br><br>
+
+
+<h1 class="headingText">
+
+Learning CSS Colors
+
+</h1>
+
+<p class="descriptionText">
+
+Colors make webpages attractive.
+
+</p>
+
+
+
+CSS Backgrounds <br> 
+
+<p>CSS Background properties are used to control the background appearance of HTML elements by applying colors, images, and positioning.</p>
+
+Background Color <br>
+Background Image <br>
+Background Position <br>
+Background Size <br>
+Background Repeat <br>
+Background Attachment <br>
+
+<h5>
+    Background Properties <br>
+1. background-color  <br>
+
+Sets the background color of an element.<br>
+
+.cardBox{ <br>
+
+background-color:lightblue; <br>
+
+}<br>
+
+<br><br><br><br>
+2. background-image<br>
+
+Adds an image as the background. <br>
+
+<br>
+.cardBox{
+
+background-image:url("background.jpg");<br>
+
+}<br>
+
+<br><br><br>
+3. background-repeat<br>
+
+Controls whether the background image repeats.<br>
+
+background-repeat:no-repeat;<br>
+
+<br><br><br><br>
+4. background-position<br>
+
+Sets the starting position of the background image.<br>
+
+<br>
+background-position:center;<br>
+
+
+<br><br><br><br>
+5. background-size<br>
+
+Controls the size of the background image.
+
+background-size:cover;<br>
+
+<br><br><br><br><br>
+6. background-attachment<br>
+
+
+Controls whether the background scrolls with the page or remains fixed.<br>
+background-attachment:fixed;<br>
+
+<br><br><br>
+7. background (Shorthand)<br>
+
+Combines multiple background properties into a single declaration.<br>
+
+<br>
+background:black url("background.jpg") no-repeat center/cover;<br>
+</h5>
+<br><br>
+
+<div class="bannerSection">
+
+Welcome to CSS
+
+</div>
+
+
+<div class="Back">
+
+    Welcome to our family.................
+
+
+</div>
+
+
+
+
+
+
+CSS Borders
+
+<h1>CSS Border is used to create a visible boundary around an HTML element.</h1>
+
+
+
+<br><br><br><br><br>
+
+1. border <br>
+
+Used to define width, style, and color in a single line.<br>
+
+.productCard{<br>
+
+border:2px solid black;<br>
+
+}<br>
+
+<br><br><br><br><br>
+2.border-style<br>
+
+Defines the style of the border.<br>
+
+border-style:dashed;<br>
+<br>
+Common Styles:<br>
+solid<br>
+
+dashed<br>
+
+dotted<br>
+
+double<br>
+
+groove<br>
+
+ridge<br>
+
+inset<br>
+
+outset<br>
+
+none<br>
+
+
+<br><br><br><br><br><br>
+
+3.border-width<br>
+
+Sets the thickness of the border.<br>
+
+
+border-width:5px;<br>
+
+<br><br><br><br><br><br>
+4.border-color<br>
+
+Sets the border color.<br>
+
+
+border-color:blue;<br>
+
+<br><br><br><br>
+
+5.border-radius<br>
+
+
+Creates rounded corners.<br>
+
+
+border-radius:15px<br>
+
+<br><br><br><br><br>
+
+6.
+Individual Borders<br>
+Top<br>
+border-top:4px solid red;<br>
+Right<br>
+border-right:4px solid blue;<br>
+Bottom<br>
+border-bottom:4px solid green;<br>
+Left<br>
+border-left:4px solid orange;<br>
+
+
+<div class="profileCard">
+
+Welcome to CSS
+
+</div>
+
+
+
+<div  class="bod"> Hello this is sameer khan </div>
+
+
+
+
+
+Margin & Padding:
+
+<h4>Margin: <br>
+
+Margin creates space outside an element. <br>
+
+Padding: <br>
+
+Padding creates space inside an element between the content and its border. <br></h4>
+
+<div class="infoCard">
+
+CSS Revision
+
+</div>
+
+
+<div class="k"> hello this is css</div>
+
+
+<br><br>
+
+CSS Box Model:
+
+
+<h5>The CSS Box Model is a layout model that represents every HTML element as a rectangular box 
+consisting of Content, Padding, Border, and Margin.</h5>
+
+<div class="profileBox">
+
+Learning CSS
+
+</div>
+
+CSS Position: <br>
+
+The CSS Position property specifies how an HTML element is positioned within a webpage. <br>
+
+Types of Position <br>
+Static <br>
+Relative <br>
+Absolute <br>
+Fixed <br>
+Sticky <br>
+<br><br><br><br><br>
+
+Static (Default) <br>
+
+Default position of every HTML element. <br>
+
+Example
+position:static; <br>
+
+<br><br><br><br><br>
+
+Relative <br>
+
+Moves an element relative to its original position. <br>
+
+position:relative; <br>
+
+top:20px; <br>
+
+left:30px; <br>
+
+<br><br><br><br><br>
+
+Absolute <br>
+
+
+Positions an element relative to its nearest positioned parent. <br>
+
+Example<br>
+.parent{<br>
+
+position:relative;<br>
+
+}<br>
+
+.child{<br>
+
+position:absolute;<br>
+
+top:10px;<br>
+
+right:10px;<br>
+
+}<br>
+
+
+Fixed <br>
+Definition
+
+Keeps an element fixed relative to the browser window. <br>
+
+Example<br>
+position:fixed;<br>
+
+bottom:20px;<br>
+
+right:20px;<br>
+
+
+Sticky <br>
+
+Acts like Relative until a scroll position is reached, then behaves like Fixed.<br>
+
+Example<br>
+position:sticky;<br>
+
+top:0;<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
