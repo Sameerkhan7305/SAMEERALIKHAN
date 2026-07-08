@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ece3e3;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+
+
+
+
+/* Header */
+
+header {
+  background-color: #0d6efd;
+  color: rgb(23, 80, 82);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Sidebar */
+
+aside {
+  background-color: #24292e;
+  color: white;
+  width: 220px;
+  height: 270px;
+  padding: 20px;
+  border-radius: 200px;
+  margin-top: 20px;
+  border: #000000;
+  
+}
+
+aside ul {
+  list-style:circle;
+  margin-top: 15px;
+}
+
+aside li {
+  padding: 10px;
+  background: #3b4148;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Content */
+
+main {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px lightgray;
+}
+
+main h2 {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+  margin-top: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+
+
+/* Student */
+
+
+/* .studentCard {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px lightgray;
+}
+
+
+
+
+
+
+
+.studentCard h2 {
+  margin: 10px 0;
+  color: #333;
+} */
